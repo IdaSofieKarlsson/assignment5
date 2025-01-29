@@ -1,0 +1,40 @@
+/*styling header*/
+header {
+    background-color: #273F49;
+}
+h1 {
+    color: #F2F2F2;
+    font-family: "DynaPuff", serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
+    /*styla H! lite för skojs skull*/
+}
+/*styling main background*/
+main {
+    background-color: #ACB7BF;
+}
+
+/*styling flex-squares exercise*/
+h3 {
+    color: #C487B9;
+    font-family: "Fontdiner Swanky", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex_exemple_squares {
+    background-color: #37B5B1;
+}
+.container_squares {
+    background-color: #E29D6A;
+}
+.card_square {
+    background-color: #C9F0C9;
+}
+
+
+
+
+/*styling flex-circles exercise*/
