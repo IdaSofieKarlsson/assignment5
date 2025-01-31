@@ -1,6 +1,8 @@
 /*styling header*/
 header {
     background-color: #273F49;
+    height: 100px;
+    margin-top: auto;
 }
 h1 {
     color: #F2F2F2;
@@ -8,7 +10,9 @@ h1 {
     font-size: 48px;
     font-weight: 700;
     font-style: normal;
-    /*styla H! lite för skojs skull*/
+    text-align: center;
+    line-height: 100px;
+
 }
 /*styling main background*/
 main {
@@ -16,25 +20,127 @@ main {
 }
 
 /*styling flex-squares exercise*/
+/*The text in container 5*/
 h3 {
     color: #C487B9;
-    font-family: "Fontdiner Swanky", serif;
-    font-size: 24px;
+    font-family: "Fontdiner Swanky", serif; /*Roboto is boring!!!!*/
+    font-size: 8px; /*it says 12 px in Figma, but 8 px makes it easer to see that the placement is correct. */
     font-weight: 400;
     font-style: normal;
+    display: flex;
 }
 
+/*Basic style for card, the square*/
+.card_square {
+    min-height: 78px;
+    max-height: 200%;
+    min-width: 78px;
+    max-width: 100%;
+    margin: 5px;
+    background-color: #C9F0C9;
+    display: flex;
+}
+
+/*The background for the squares-exercise*/
 .flex_exemple_squares {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
     background-color: #37B5B1;
 }
+
+/*Each pair is made up of two containers with squares*/
+.container_squares_pair {
+    display: flex;
+    background-color: #37B5B1;
+}
+
+/*Basic style for a container with three squares*/
 .container_squares {
+    position: relative;
+    width: 468px;
+    height: 160px;
+    display: flex;
+    margin: 5px;
     background-color: #E29D6A;
 }
-.card_square {
-    background-color: #C9F0C9;
+
+/*The individual styles for different containers in order to create different placement of squares*/
+.first_container_squares {
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 
+.second_container_squares {
+    justify-content: center;
+    align-content: stretch; /*In Figma the height is 120px. I assume this equals max available height, not specific 120px. */
+}
 
 
-/*styling flex-circles exercise*/
+.third_container_squares {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.fourth_container_squares{
+    justify-content: space-between;
+}
+.square_1_container_4 {
+    align-self: flex-start;
+}
+.square_2_container_4 {
+    align-self: flex-start;
+}
+.square_3_container_4 {
+    align-self: flex-end;
+}
+
+
+.fifth_container_squares{
+    justify-content: space-around;
+    align-items: stretch;
+}
+.square_1_container_5, .square_3_container_5{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.square_2_container_5{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    max-height: 50%; /*In Figma the height is 64px. I assume this equals halfth available heigth, not specific 64px. */
+    align-self: center;
+}
+
+
+.sixth_container_squares{
+    justify-content: center;
+    align-items: center;
+    
+}
+.square_1_container_6 {
+    flex-basis: 78px;
+    flex-shrink: -1;
+}
+.square_2_container_6{
+    flex-basis: 78px;
+    flex-grow: 2;
+    max-width: 156px;
+}
+.square_3_container_6{
+    flex-basis: 78px;
+    
+    flex-shrink: -1;
+}
+
+
+/*styling flex-circles exercise. 
+I plan on doing this part later. 
+The circles are created by a square div with 90 degrees border radius. 
+The different placements oc circles is created with flex-wrap. */

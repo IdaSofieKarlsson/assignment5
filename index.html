@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lets Flex!</title>
     <!--link default styles sheet-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fontdiner+Swanky&display=swap" rel="stylesheet">
@@ -16,43 +17,54 @@
     </header>
     <main>
         <div class="flex_exemple_squares">
-            <div class="container_squares">
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-            </div>
-            <div class="container_squares">
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-            </div>
-            <div class="container_squares">
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-            </div>
-            <div class="container_squares">
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-            </div>
-            <div class="container_squares">
-                <div class="card_square">
-                    <h3>Some Text</h3>
+
+            <div class="container_squares_pair">
+                <div class="container_squares first_container_squares">
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
                 </div>
-                <div class="card_square">
-                    <h3>Some Text</h3>
-                </div>
-                <div class="card_square">
-                    <h3>Some Text</h3>
+                <div class="container_squares second_container_squares">
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
                 </div>
             </div>
-            <div class="container_squares">
-                <div class="card_square"></div>
-                <div class="card_square"></div>
-                <div class="card_square"></div>
+
+            <div class="container_squares_pair">
+                <div class="container_squares third_container_squares">
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
+                    <div class="card_square"></div>
+                </div>
+                <div class="container_squares fourth_container_squares">
+                    <div class="card_square square_1_container_4"></div>
+                    <div class="card_square square_2_container_4"></div>
+                    <div class="card_square square_3_container_4"></div>
+                </div>
             </div>
+            
+            <div class="container_squares_pair">
+                <div class="container_squares fifth_container_squares">
+                    <div class="card_square text_square square_1_container_5">
+                        <h3>Some Text</h3>
+                    </div>
+                    <div class="card_square text_square square_2_container_5">
+                        <h3>Some Text</h3>
+                    </div>
+                    <div class="card_square text_square square_3_container_5">
+                        <h3>Some Text</h3>
+                    </div>
+                </div>
+                <div class="container_squares sixth_container_squares">
+                    <div class="card_square square_1_container_6"></div>
+                    <div class="card_square square_2_container_6"></div>
+                    <div class="card_square square_3_container_6"></div>
+                </div>   
+            </div>
+            
         </div>
+        <!--
         <div class="flex_exemple_circles">
             <div class="container_circles">
                 <div class="card_circle"></div>
@@ -93,7 +105,7 @@
                 <div class="card_circle"></div>
             </div>
 
-        </div>
+        </div>-->
 
     </main>
 </body>
